@@ -1,17 +1,22 @@
-var priceLabel = document.querySelector('.price__value');
-var viewsLabel = document.querySelector('.views__value');
+let priceLabel = document.querySelector('.price__value');
+let viewsLabel = document.querySelector('.views__value');
+let toggle = document.querySelector('#toggle');
 
 window.oninput = function handleChange() {
-  var x = document.querySelector('.slider');
+  let x = document.querySelector('.slider');
   x.step = 25;
-
-  // document.querySelector("#test").innerHTML = x.value;
   changeLabel(x.value)
+
+  if (toggle.checked) {
+    document.querySelector('.discount').classList.add('show');
+  } else {
+    document.querySelector('.discount').classList.remove('show');
+  }
 }
 
 function changeLabel(x) {
-  var price;
-  var views;
+  let price;
+  let views;
   
   if (x < 24) {
     price = 8;
@@ -28,6 +33,10 @@ function changeLabel(x) {
   } else {
     price = 36;
     views = '1M';
+  }
+
+  if (toggle.checked) {
+    price = price * .75
   }
 
   priceLabel.innerHTML = `$${price}.00`

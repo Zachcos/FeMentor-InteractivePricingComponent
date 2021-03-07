@@ -391,6 +391,7 @@ html {
 }
 
 .card__top .toggle-wrapper .discount {
+  display: none;
   background-color: #feece7;
   border-radius: 8px;
   color: #ff8c66;
@@ -398,6 +399,10 @@ html {
   padding: 4px 6px;
   position: absolute;
   right: -50px;
+}
+
+.card__top .toggle-wrapper .discount.show {
+  display: block;
 }
 
 .card__bottom {
