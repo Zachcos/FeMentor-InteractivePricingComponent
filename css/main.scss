@@ -1,0 +1,20 @@
+@import "reset";
+/* Start variables */
+$background__discount: hsl(14, 92%, 95%);
+$background__main: hsl(230, 100%, 99%);
+$background__pricingComponent: hsl (0, 0%, 100%);
+$background__textAndCta: hsl(227, 35%, 25%);
+$background__toggle: hsl(223, 50%, 87%);
+$sliderBar__background: hsl(174, 86%, 45%);
+$sliderBar__empty: hsl(224, 65%, 95%);
+$sliderBar__full: hsl(174, 77%, 80%);
+$text__cta: hsl(226, 100%, 87%);
+$text__discount: hsl(15, 100%, 70%);
+$text: hsl(225, 20%, 60%);
+/* End variables */
+
+html {
+  font-size: 15px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+}
