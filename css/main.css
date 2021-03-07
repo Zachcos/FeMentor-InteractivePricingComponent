@@ -140,6 +140,7 @@ table {
 /* End variables */
 html {
   background-color: #e2e2eb;
+  color: #858fad;
   font-size: 15px;
   font-family: "Manrope", sans-serif;
   font-weight: 600;
@@ -169,7 +170,7 @@ html {
   text-align: center;
   padding-top: 100px;
   position: relative;
-  width: 40%;
+  width: 550px;
 }
 
 .cta__pattern {
@@ -192,12 +193,86 @@ html {
 }
 
 .cta__subtitle {
-  color: #858fad;
   position: relative;
   z-index: 5;
 }
 
 .card {
+  background: white;
+  border-radius: 8px;
+  height: 100%;
+  margin-top: 125px;
+  padding: 60px 50px;
+  width: 550px;
+}
+
+.card__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card__top .views,
+.card__top .price {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__top .views {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.card__top .price {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  letter-spacing: 0.5px;
+  text-align: right;
+  width: 50%;
+}
+
+.card__top .price .em {
+  color: #293356;
+  font-size: 2.75rem;
+  font-weight: 800;
+  margin-right: 5px;
+}
+
+.card__top .slider {
+  background: #a5f3eb;
+  border-radius: 4px;
+  height: 7px;
+  margin: 50px 0;
+  width: 100%;
+}
+
+.card__top .toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.card__bottom {
   display: none;
+}
+
+.card__bottom .perks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=main.css.map */

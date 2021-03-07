@@ -2,7 +2,7 @@
 /* Start variables */
 $background__discount: hsl(14, 92%, 95%);
 $background__main: hsl(230, 100%, 99%);
-$background__pricingComponent: hsl (0, 0%, 100%);
+$background__pricingComponent: hsl(0, 0%, 100%);
 $background__textAndCta: hsl(227, 35%, 25%);
 $background__toggle: hsl(223, 50%, 87%);
 $sliderBar__background: hsl(174, 86%, 45%);
@@ -15,6 +15,7 @@ $text: hsl(225, 20%, 60%);
 
 html {
   background-color: #e2e2eb;
+  color: $text;
   font-size: 15px;
   font-family: "Manrope", sans-serif;
   font-weight: 600;
@@ -38,7 +39,7 @@ html {
   text-align: center;
   padding-top: 100px;
   position: relative;
-  width: 40%;
+  width: 550px;
   &__pattern {
     position: absolute;
     left: 50%;
@@ -56,12 +57,64 @@ html {
     z-index: 5;
   }
   &__subtitle {
-    color: $text;
     position: relative;
     z-index: 5;
   }
 }
 
 .card {
-  display: none;
+  background: $background__pricingComponent;
+  border-radius: 8px;
+  height: 100%;
+  margin-top: 125px;
+  padding: 60px 50px;
+  width: 550px;
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    .views,
+    .price {
+      align-items: center;
+      display: flex;
+    }
+    .views {
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      width: 50%;
+    }
+    .price {
+      justify-content: flex-end;
+      letter-spacing: 0.5px;
+      text-align: right;
+      width: 50%;
+      .em {
+        color: $background__textAndCta;
+        font-size: 2.75rem;
+        font-weight: 800;
+        margin-right: 5px;
+      }
+    }
+    .slider {
+      background: $sliderBar__full;
+      border-radius: 4px;
+      height: 7px;
+      margin: 50px 0;
+      width: 100%;
+    }
+    .toggle {
+      display: flex;
+      width: 100%;
+    }
+  }
+  &__bottom {
+    // display: flex;
+    display: none;
+    .perks {
+      display: flex;
+      flex-direction: column;
+    }
+    .ctnBtn {
+    }
+  }
 }
