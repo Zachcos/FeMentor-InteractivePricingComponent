@@ -266,6 +266,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+  position: relative;
   width: 70%;
 }
 
@@ -334,7 +335,13 @@ html {
 }
 
 .card__top .toggle-wrapper .discount {
-  display: none;
+  background-color: #feece7;
+  border-radius: 8px;
+  color: #ff8c66;
+  font-size: 0.65rem;
+  padding: 4px 6px;
+  position: absolute;
+  right: -50px;
 }
 
 .card__bottom {
