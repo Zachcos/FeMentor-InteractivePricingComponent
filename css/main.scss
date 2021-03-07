@@ -14,7 +14,54 @@ $text: hsl(225, 20%, 60%);
 /* End variables */
 
 html {
+  background-color: #e2e2eb;
   font-size: 15px;
   font-family: "Manrope", sans-serif;
   font-weight: 600;
+}
+
+.full-wrap {
+  background: url("../images/bg-pattern.svg") no-repeat;
+  background-color: $background__main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);
+}
+
+.cta {
+  text-align: center;
+  padding-top: 100px;
+  position: relative;
+  width: 40%;
+  &__pattern {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    top: 0;
+    z-index: 1;
+  }
+  &__title {
+    color: $background__textAndCta;
+    font-size: 1.75rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 5;
+  }
+  &__subtitle {
+    color: $text;
+    position: relative;
+    z-index: 5;
+  }
+}
+
+.card {
+  display: none;
 }
