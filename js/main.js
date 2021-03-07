@@ -10,20 +10,26 @@ window.oninput = function handleChange() {
 }
 
 function changeLabel(x) {
+  var price;
+  var views;
+  
   if (x < 24) {
-    priceLabel.innerHTML = '$8.00'
-    viewsLabel.innerHTML = '10K'
+    price = 8;
+    views = '10K';
   } else if (x < 49 ) {
-    priceLabel.innerHTML = '$12.00'
-    viewsLabel.innerHTML = '50K'
+    price = 12;
+    views = '50K';
   } else if (x < 74) {
-    priceLabel.innerHTML = '$16.00'
-    viewsLabel.innerHTML = '100K'
+    price = 16;
+    views = '100K';
   } else if (x < 100 ) {
-    priceLabel.innerHTML = '$24.00'
-    viewsLabel.innerHTML = '500K'
+    price = 24;
+    views = '500K';
   } else {
-    priceLabel.innerHTML = '$36.00'
-    viewsLabel.innerHTML = '1M'
+    price = 36;
+    views = '1M';
   }
+
+  priceLabel.innerHTML = `$${price}.00`
+  viewsLabel.innerHTML = `${views}`
 }
