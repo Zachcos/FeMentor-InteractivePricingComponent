@@ -242,7 +242,7 @@ html {
   width: 50%;
 }
 
-.card__top .price .em {
+.card__top .price .price__value {
   color: #293356;
   font-size: 2.75rem;
   font-weight: 800;

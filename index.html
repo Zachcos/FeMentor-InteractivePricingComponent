@@ -26,10 +26,15 @@
 
       <div class="card">
         <div class="card__top">
-          <div class="views">100K Pageviews</div>
-          <div class="price"><span class="em">$16.00</span> /month</div>
+          <div class="views">
+            <span class="views__value">10K</span>&nbsp;Pageviews
+          </div>
+          <div class="price">
+            <span class="price__value">$8.00</span> /month
+          </div>
           <div class="slider-wrapper">
-            <input type="range" min="1" max="100" value="50" class="slider" />
+            <input type="range" value="0" class="slider" />
+            <div id="test"></div>
           </div>
           <div class="toggle-wrapper">
             <span class="toggle-label">Monthly Billing</span>
@@ -53,5 +58,6 @@
         </div>
       </div>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
