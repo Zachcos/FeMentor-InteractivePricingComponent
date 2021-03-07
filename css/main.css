@@ -255,11 +255,86 @@ html {
   width: 100%;
 }
 
-.card__top .toggle {
+.card__top .toggle-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.card__top .toggle-wrapper .toggle-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.card__top .toggle-wrapper label {
+  height: 20px;
+  margin: 0 1.2rem;
+  position: relative;
+  width: 45px;
+}
+
+.card__top .toggle-wrapper label input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  bottom: 0;
+  display: block;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  max-width: 100%;
+  outline: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
   width: 100%;
+}
+
+.card__top .toggle-wrapper label span {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #cdd7ee;
+  border-radius: 12px;
+  bottom: 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.card__top .toggle-wrapper label span:before {
+  background-color: white;
+  border-radius: 50%;
+  content: "";
+  cursor: pointer;
+  height: 14px;
+  left: 0.25rem;
+  position: absolute;
+  top: 3px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  width: 14px;
+}
+
+.card__top .toggle-wrapper label input:checked + span:before {
+  left: calc(100% - 14px - 0.25rem);
+}
+
+.card__top .toggle-wrapper .discount {
+  display: none;
 }
 
 .card__bottom {

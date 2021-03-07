@@ -102,9 +102,66 @@ html {
       margin: 50px 0;
       width: 100%;
     }
-    .toggle {
+    .toggle-wrapper {
+      align-items: center;
       display: flex;
-      width: 100%;
+      justify-content: center;
+      margin: 0 auto;
+      width: 70%;
+      .toggle-label {
+        font-size: 0.8rem;
+        letter-spacing: 0.5px;
+      }
+      label {
+        height: 20px;
+        margin: 0 1.2rem;
+        position: relative;
+        width: 45px;
+        input {
+          appearance: none;
+          bottom: 0;
+          display: block;
+          height: 100%;
+          left: 0;
+          margin: 0;
+          max-width: 100%;
+          outline: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 100%;
+        }
+        span {
+          align-items: center;
+          background: $background__toggle;
+          border-radius: 12px;
+          bottom: 0;
+          cursor: pointer;
+          display: flex;
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          &:before {
+            background-color: $background__pricingComponent;
+            border-radius: 50%;
+            content: "";
+            cursor: pointer;
+            height: 14px;
+            left: 0.25rem;
+            position: absolute;
+            top: 3px;
+            transition: all 0.2s ease-out;
+            width: 14px;
+          }
+        }
+        input:checked + span:before {
+          left: calc(100% - 14px - 0.25rem);
+        }
+      }
+      .discount {
+        display: none;
+      }
     }
   }
   &__bottom {
