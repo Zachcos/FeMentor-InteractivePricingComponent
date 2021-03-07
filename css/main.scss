@@ -67,11 +67,14 @@ html {
   border-radius: 8px;
   height: 100%;
   margin-top: 125px;
-  padding: 60px 50px;
   width: 550px;
+  -webkit-box-shadow: 0px 10px 20px 0px hsla(227, 35%, 25%, 0.1);
+  -moz-box-shadow: 0px 10px 20px 0px hsla(227, 35%, 25%, 0.1);
+  box-shadow: 0px 10px 20px 0px hsla(227, 35%, 25%, 0.1);
   &__top {
     display: flex;
     flex-wrap: wrap;
+    padding: 60px 50px 0;
     .views,
     .price {
       align-items: center;
@@ -106,7 +109,7 @@ html {
       align-items: center;
       display: flex;
       justify-content: center;
-      margin: 0 auto;
+      margin: 0 auto 50px;
       position: relative;
       width: 70%;
       .toggle-label {
@@ -172,13 +175,47 @@ html {
     }
   }
   &__bottom {
-    // display: flex;
-    display: none;
+    border-top: 1px solid $sliderBar__empty;
+    display: flex;
+    padding: 20px 50px;
+    .perks,
+    .ctaBtn-wrapper {
+      width: 50%;
+    }
     .perks {
       display: flex;
       flex-direction: column;
+      font-size: 0.8rem;
+      height: 90px;
+      letter-spacing: 0.5px;
+      justify-content: space-around;
+      .perk {
+        position: relative;
+        padding-left: 20px;
+        &:before {
+          background: $sliderBar__full;
+          background: url("/images/icon-check.svg") no-repeat;
+          content: "";
+          height: 15px;
+          left: 0;
+          position: absolute;
+          top: 2px;
+          width: 15px;
+        }
+      }
     }
-    .ctnBtn {
+    .ctaBtn-wrapper {
+      align-items: center;
+      display: flex;
+      justify-content: flex-end;
+      .btn {
+        background: $background__textAndCta;
+        border-radius: 22px;
+        color: $text__cta;
+        font-size: 0.85rem;
+        padding: 15px 45px;
+        text-align: center;
+      }
     }
   }
 }

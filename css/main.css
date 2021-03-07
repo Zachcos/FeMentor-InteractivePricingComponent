@@ -202,8 +202,9 @@ html {
   border-radius: 8px;
   height: 100%;
   margin-top: 125px;
-  padding: 60px 50px;
   width: 550px;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(41, 51, 86, 0.1);
+  box-shadow: 0px 10px 20px 0px rgba(41, 51, 86, 0.1);
 }
 
 .card__top {
@@ -212,6 +213,7 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 60px 50px 0;
 }
 
 .card__top .views,
@@ -265,7 +267,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   position: relative;
   width: 70%;
 }
@@ -345,7 +347,16 @@ html {
 }
 
 .card__bottom {
-  display: none;
+  border-top: 1px solid #eaeefb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 50px;
+}
+
+.card__bottom .perks,
+.card__bottom .ctaBtn-wrapper {
+  width: 50%;
 }
 
 .card__bottom .perks {
@@ -356,5 +367,47 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 0.8rem;
+  height: 90px;
+  letter-spacing: 0.5px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card__bottom .perks .perk {
+  position: relative;
+  padding-left: 20px;
+}
+
+.card__bottom .perks .perk:before {
+  background: #a5f3eb;
+  background: url("/images/icon-check.svg") no-repeat;
+  content: "";
+  height: 15px;
+  left: 0;
+  position: absolute;
+  top: 2px;
+  width: 15px;
+}
+
+.card__bottom .ctaBtn-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.card__bottom .ctaBtn-wrapper .btn {
+  background: #293356;
+  border-radius: 22px;
+  color: #bdccff;
+  font-size: 0.85rem;
+  padding: 15px 45px;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
