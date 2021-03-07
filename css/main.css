@@ -249,12 +249,62 @@ html {
   margin-right: 5px;
 }
 
-.card__top .slider {
+.card__top .slider-wrapper {
+  margin: 50px 0;
+  width: 100%;
+}
+
+.card__top .slider-wrapper .slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   background: #a5f3eb;
   border-radius: 4px;
   height: 7px;
-  margin: 50px 0;
+  outline: none;
   width: 100%;
+}
+
+.card__top .slider-wrapper .slider::-webkit-slider-thumb, .card__top .slider-wrapper .slider::-moz-range-thumb {
+  background: url("/images/icon-slider.svg") no-repeat;
+  background-size: 25px 15px;
+  background-position: 7px center;
+  background-color: #10d5c2;
+  border-radius: 50%;
+  border: none;
+  height: 40px;
+  outline: none;
+  position: relative;
+  width: 40px;
+}
+
+.card__top .slider-wrapper .slider::-webkit-slider-thumb:hover, .card__top .slider-wrapper .slider::-webkit-slider-thumb:active {
+  -webkit-box-shadow: 0px 15px 25px -8px #10d5c2;
+  box-shadow: 0px 15px 25px -8px #10d5c2;
+}
+
+.card__top .slider-wrapper .slider::-moz-range-thumb:hover, .card__top .slider-wrapper .slider::-moz-range-thumb:active {
+  box-shadow: 0px 15px 25px -8px #10d5c2;
+}
+
+.card__top .slider-wrapper .slider::-webkit-slider-thumb:hover {
+  background-color: #7aeade;
+  cursor: -webkit-grab;
+}
+
+.card__top .slider-wrapper .slider::-moz-range-thumb:hover {
+  background-color: #7aeade;
+  cursor: -moz-grab;
+}
+
+.card__top .slider-wrapper .slider::-webkit-slider-thumb:active {
+  background-color: #0ca697;
+  cursor: -webkit-grabbing;
+}
+
+.card__top .slider-wrapper .slider::-moz-range-thumb:active {
+  background-color: #0ca697;
+  cursor: -moz-grabbing;
 }
 
 .card__top .toggle-wrapper {
@@ -332,6 +382,10 @@ html {
   width: 14px;
 }
 
+.card__top .toggle-wrapper label span:hover {
+  background: #a5f3eb;
+}
+
 .card__top .toggle-wrapper label input:checked + span:before {
   left: calc(100% - 14px - 0.25rem);
 }
@@ -406,8 +460,13 @@ html {
   background: #293356;
   border-radius: 22px;
   color: #bdccff;
+  cursor: pointer;
   font-size: 0.85rem;
   padding: 15px 45px;
   text-align: center;
+}
+
+.card__bottom .ctaBtn-wrapper .btn:hover {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
