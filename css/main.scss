@@ -151,8 +151,21 @@ html {
         height: 7px;
         outline: none;
         width: 100%;
-        &::-webkit-slider-thumb,
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          background: url("/images/icon-slider.svg") no-repeat;
+          background-size: 25px 15px;
+          background-position: 7px center;
+          background-color: $sliderBar__background;
+          border-radius: 50%;
+          border: none;
+          height: 40px;
+          outline: none;
+          position: relative;
+          width: 40px;
+        }
         &::-moz-range-thumb {
+          -webkit-appearance: none;
           background: url("/images/icon-slider.svg") no-repeat;
           background-size: 25px 15px;
           background-position: 7px center;

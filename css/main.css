@@ -345,7 +345,22 @@ html {
   width: 100%;
 }
 
-.card__top .slider-wrapper .slider::-webkit-slider-thumb, .card__top .slider-wrapper .slider::-moz-range-thumb {
+.card__top .slider-wrapper .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: url("/images/icon-slider.svg") no-repeat;
+  background-size: 25px 15px;
+  background-position: 7px center;
+  background-color: #10d5c2;
+  border-radius: 50%;
+  border: none;
+  height: 40px;
+  outline: none;
+  position: relative;
+  width: 40px;
+}
+
+.card__top .slider-wrapper .slider::-moz-range-thumb {
+  -webkit-appearance: none;
   background: url("/images/icon-slider.svg") no-repeat;
   background-size: 25px 15px;
   background-position: 7px center;
