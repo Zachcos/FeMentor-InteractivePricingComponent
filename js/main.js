@@ -6,12 +6,6 @@ window.oninput = function handleChange() {
   let x = document.querySelector('.slider');
   x.step = 25;
   changeLabel(x.value)
-
-  if (toggle.checked) {
-    document.querySelector('.discount').classList.add('show');
-  } else {
-    document.querySelector('.discount').classList.remove('show');
-  }
 }
 
 function changeLabel(x) {
