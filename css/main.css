@@ -173,6 +173,12 @@ html {
   width: 550px;
 }
 
+@media screen and (max-width: 565px) {
+  .cta {
+    width: 100%;
+  }
+}
+
 .cta__pattern {
   position: absolute;
   left: 50%;
@@ -475,7 +481,7 @@ html {
 
 .card__top .toggle-wrapper .discount {
   color: #ff8c66;
-  display: none;
+  display: inline;
   font-size: 0.65rem;
   position: absolute;
   right: -20px;
